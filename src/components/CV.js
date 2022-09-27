@@ -56,12 +56,7 @@ const Wrapper = styled.section`
   width: 21cm;
   min-width: 21cm;
   max-width: 21cm;
-  min-height: 29.7cm;
-  background-color: rgb(240, 240, 240);
-  @page {
-    margin: 0;
-    padding: 0;
-  }
+  min-height: 29.5cm;
 `
 
 const WrapperLeft = styled.section`
@@ -150,8 +145,6 @@ const CV = ({experiences, setExperiences, educations, setEducations, personal, s
           {experiences.map((experience, index) => {
             return <SmallDiv key={index}>
               <Table>
-                <col style={{width: '20%'}}></col>
-                <col style={{width: '20%'}}></col>
                 <thead>
                   <Tr>
                     <Th>{experience.from}-{experience.to}</Th>
@@ -173,8 +166,6 @@ const CV = ({experiences, setExperiences, educations, setEducations, personal, s
           {educations.map((education, index) => {
             return <SmallDiv key={index}>
               <Table>
-                <col style={{width: '20%'}}></col>
-                <col style={{width: '20%'}}></col>
                 <thead>
                   <Tr>
                     <Th>{education.from}-{education.to}</Th>
